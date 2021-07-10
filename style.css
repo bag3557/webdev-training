@@ -1,4 +1,92 @@
+/* 
+commented lines
+*/
+
+/* p { 
+    color: red; 
+    font-size: 20px; 
+} */
+
+/* * --- Universal Selector
+p, div --- Tag selector
+.classname --- class selector 
+.class1.class2 --multiclass selector
+#idname --- Id selector 
+div > p --- nested selector 
+p[data-name="ajit"] --- attribute selector
+*/
+
+/* .c1.c2 {
+    color: green;
+    font-size: 20px;
+} */
+
+/* 
 p {
+    color: green;
+    font-size: 28px;
+} 
+
+div p {
+    color: blue;
+    font-size: 34px;
+}
+
+div > p {
     color: red;
-    font-size: 40px;
+    font-size: 34px;
+} */
+/* p[data-name] {
+    color: pink
+} */
+/* p[data-name="ajit"] {
+    color: pink
+} */
+
+
+/* combinators */
+/* div > p ---- all child p tags in all div tag, it will ignore grand childrens  */
+/* div p --- all p tags, includig child, grand-child, grannd-grand-child */
+
+/* pseudo- classes */
+
+/* child pseudo classes */
+/* div > p:first-child {
+    color:blueviolet
+}
+
+div > p:nth-child(2) {
+    color:orange
+}
+div p:nth-child(n+3) {
+    color:red
+} */
+/* div > p:nth-child(3n) {
+    color:red;
+    font-size: 20px;
+} */
+/* div > p:nth-child(3n+1) {
+    color:red;
+    font-size: 20px;
+} */
+/* div p:nth-child(-n+3) {
+    color:red;
+    font-size: 20px;
+} */
+div p:nth-child(odd) {
+    color:red;
+    font-size: 20px;
+}
+div p:nth-child(even) {
+    color:green;
+    font-size: 20px;
+}
+
+div p:last-child {
+    color:orange;
+    font-size: 20px;
+}
+div p:nth-last-child(4) {
+    color:violet;
+    font-size: 20px;
 }
